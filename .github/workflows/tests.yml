@@ -29,9 +29,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install YouTube transcription extra
-        run: pip install "./packages/markitdown[youtube-transcription]"
-
       - name: Install Hatch
         run: pipx install hatch
       - name: Run tests
